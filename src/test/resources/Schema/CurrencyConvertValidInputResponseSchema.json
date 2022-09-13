@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "query": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "from",
+        "to",
+        "amount"
+      ]
+    },
+    "info": {
+      "type": "object",
+      "properties": {
+        "timestamp": {
+          "type": "integer"
+        },
+        "rate": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "timestamp",
+        "rate"
+      ]
+    },
+    "date": {
+      "type": "string"
+    },
+    "result": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "success",
+    "query",
+    "info",
+    "date",
+    "result"
+  ]
+}
